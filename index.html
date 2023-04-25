@@ -14,17 +14,20 @@
     <h1>JAVA SCRIPT</h1>
 
     <div class="form">
-        <div class="form__box">
-            <div class="form__tittle">Kalkulator </div>
-            <p class="form__label">Podaj wartość w °C:</p>
-            <input class="form__input">
+        
+        <div class="form-box">
+            <label for="converter">Konwerter <span class="one">°C</span> na <span class="two">°F</span></label>
+            <input type="number" id="converter" placeholder="Wpisz liczbę...">
+
+            <p class="result">test</p>
+
         </div>
-        <div class="form__box">
-            <p class="form__label">Wartość w °F:</p>
-            <p class="form_result">X</p>
+
+        <div class="btn-box">
+            <button class="conv">Oblicz</button>
+            <button class="reset">Reset</button>
+            <button class="change">Zamień</button>
         </div>
-        <button class="form__button clear">wyczyść</button>
-        <button class="form__button--highlight calculate">oblicz</button>
     </div>
 
     <script src="./js/script.js"></script>
