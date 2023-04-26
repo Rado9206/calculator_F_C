@@ -1,10 +1,19 @@
-let celsius
-let temp
+const converter = document.querySelector('#converter')
+const result = document.querySelector('.result')
+const convBtn = document.querySelector('.conv')
+const resetBtn = document.querySelector('.reset')
+const changeBtn = document.querySelector('.change')
+const firstValue = document.querySelector('.one')
+const secondValue = document.querySelector('.two')
 
-const farenheit = c => {
-	celsius = c
-	temp = celsius * 1.8 + 32
-	console.log(`${c}°C = ${temp}°F`)
+const swap = () => {
+	if(firstValue.textContent === '°C') {
+		firstValue.textContent = '°F'
+		secondValue.textContent = '°C'
+	} else {
+		firstValue.textContent = '°C'
+		secondValue.textContent = '°F'
+	}
 }
 
-farenheit(20)
+changeBtn.addEventListener('click', swap)
