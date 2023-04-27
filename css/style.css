@@ -23,10 +23,11 @@ body {
   text-align: center;
 }
 .form .form-box {
+  margin: 0 150px;
   width: 400px;
 }
 .form .form-box .result {
-  margin-bottom: 20px;
+  margin: 20px;
 }
 .form .form-box label {
   font-size: 36px;
@@ -38,7 +39,8 @@ body {
   border-radius: 8px;
   font-size: 20px;
 }
-.form button {
+
+button {
   padding: 20px 40px;
   margin: 20px;
   cursor: pointer;
@@ -50,7 +52,8 @@ body {
   transition: 0.3s;
   text-transform: uppercase;
 }
-.form button:hover {
+
+button:hover {
   background-color: #fff;
   color: #000;
 }/*# sourceMappingURL=style.css.map */
