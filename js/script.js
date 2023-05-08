@@ -46,6 +46,13 @@ const reset = () => {
 	converter.value = ''
 }
 
+const enterKeyCount = e => {
+	if (e.key === 'Enter') {
+		conversion()
+	}
+}
+
 changeBtn.addEventListener('click', swap)
 convBtn.addEventListener('click', conversion)
 resetBtn.addEventListener('click', reset)
+converter.addEventListener('keyup', enterKeyCount)
